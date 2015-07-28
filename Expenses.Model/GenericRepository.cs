@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace Expenses.Model
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class, IEntity
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : PrimaryKeyEntity
     {
         private bool disposedValue = false; // To detect redundant calls
         private ExpensesContext _ctx;

@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Expenses.Model
 {
-    public interface IGenericRepository<TEntity>  where TEntity: IEntity
+    public interface IGenericRepository<TEntity>  where TEntity: PrimaryKeyEntity
     {
         IEnumerable<TEntity> Get(
             Expression<Func<TEntity, bool>> filter = null,

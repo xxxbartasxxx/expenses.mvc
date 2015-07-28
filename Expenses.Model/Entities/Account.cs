@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace Expenses.Model
 {
     [Table("Accounts")]
-    public class Account : IEntity
+    public class Account : PrimaryKeyEntity
     {
-        public string Id { get; set; }
         public Decimal Balance { get; set; }
     }
 }

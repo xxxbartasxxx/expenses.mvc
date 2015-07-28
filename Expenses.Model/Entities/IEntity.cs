@@ -1,7 +1,7 @@
 ﻿namespace Expenses.Model
 {
-    public interface IEntity
+    public class PrimaryKeyEntity
     {
-        string Id { get; set; }
+        public int Id { get; set; }
     }
 }
